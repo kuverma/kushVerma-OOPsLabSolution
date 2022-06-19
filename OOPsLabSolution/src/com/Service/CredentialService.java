@@ -39,8 +39,7 @@ public class CredentialService {
 		} else {
 			depart = "Legal";
 		}
-		String email = temp.getFirstName() + temp.getLastName() + "@";
-		email = email + depart + "." + temp.getCompany() + ".com";
+		String email = temp.getFirstName() + temp.getLastName() + "@" + depart + "." + Employee.getCompany() + ".com";
 		temp.setEmailAdress(email.toLowerCase());
 	}
 

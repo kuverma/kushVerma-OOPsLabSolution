@@ -20,7 +20,7 @@ public class CreatingCredentials {
 		System.out.print("Enter Last Name of Candidate : ");
 		tempLastName = sc.next();
 		Employee emp = new Employee(tempFirstName, tempLastName);
-		emp.setCompany("Amazon");
+		Employee.setCompany("Amazon");
 		System.out.println();
 		System.out.println(
 				"Please enter the department form the following\n1. Technical\n2. Admin\n3. Human Resource\n4. Legal");
@@ -54,6 +54,7 @@ public class CreatingCredentials {
 		CredentialService.generatePassword(emp);
 		System.out.println("\n");
 		CredentialService.showCredentials(emp);
+		sc.close();
 	}
 
 }

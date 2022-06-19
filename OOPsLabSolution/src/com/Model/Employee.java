@@ -40,12 +40,12 @@ public class Employee {
 		this.department = department;
 	}
 
-	public String getCompany() {
+	public static String getCompany() {
 		return company;
 	}
 
-	public void setCompany(String company) {
-		this.company = company;
+	public static void setCompany(String company) {
+		Employee.company = company;
 	}
 
 	public String getEmailAdress() {
